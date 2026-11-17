@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Posts do Instagram, rodada 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ameixa:#2A1030;--roxo:#4B1E5A;--lav:#EFE7F3;--creme:#FBF8F4;--blush:#EBCFCB;--ouro:#B8925A;--ouro2:#D9B77E;--mostarda:#E3A72F;--graf:#1F1A22;--cinza:#6B6270}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--creme);color:var(--graf);font:400 16px/1.55 "Plus Jakarta Sans",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 72px}
+h1,h2{font-family:"DM Serif Display",serif;font-weight:400;color:var(--roxo);line-height:1.1;margin:0}
+h1{font-size:clamp(30px,6vw,52px)}h1 em,h2 em{font-style:italic}
+h2{font-size:clamp(24px,4vw,34px);margin:56px 0 6px}
+.lead{color:var(--cinza);max-width:740px;margin:10px 0 0}
+.chip{display:inline-block;background:var(--roxo);color:var(--creme);font-weight:800;font-size:12px;letter-spacing:.14em;padding:6px 14px;border-radius:999px}
+.sug{display:inline-block;margin-top:10px;font-size:13px;color:var(--roxo);background:var(--lav);border-radius:999px;padding:4px 12px}
+.frame{position:relative;overflow:hidden;background:#2A1030}
+.ab{position:absolute;left:0;top:0;width:1080px;height:1350px;overflow:hidden;transform-origin:0 0;font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:#1F1A22}
+.ab img{position:absolute;display:block;object-fit:cover}
+.ab em{font-family:"DM Serif Display",serif;font-style:italic}
+.fio{position:relative;width:96px;height:1px;background:var(--ouro)}.fio i{position:absolute;left:45px;top:-3px;width:6px;height:6px;background:var(--ouro);transform:rotate(45deg)}
+.tag{display:inline-block;font:800 22px "Plus Jakarta Sans";letter-spacing:.18em;color:var(--cinza)}
+.ram{position:absolute}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:28px;margin-top:22px}
+.card{background:#fff;border:1px solid #e4dbe8;border-radius:20px;padding:14px;box-shadow:0 18px 40px -22px rgba(42,16,48,.35)}
+.card .frame{aspect-ratio:4/5;width:100%;border-radius:12px}
+.card>h3{font:400 22px/1.2 "DM Serif Display",serif;color:var(--roxo);margin:14px 4px 2px}
+.card p{margin:0 4px;font-size:14px;color:var(--cinza)}
+.nota{background:var(--lav);border-radius:16px;padding:14px 18px;max-width:760px;margin-top:16px;font-size:15px}
+.strip{display:flex;gap:18px;overflow-x:auto;padding:6px 2px 18px;scroll-snap-type:x mandatory}
+.strip .card{flex:0 0 min(78vw,280px);scroll-snap-align:start;padding:10px}
+
+/* H: cabelo + frase */
+.h1 .foto{left:0;top:0;width:1080px;height:830px}
+.h1 .pn{position:absolute;left:0;right:0;top:830px;bottom:0;background:#FBF8F4;padding:56px 90px 0}
+.h1 h3{margin:26px 0 0;font:400 76px/1.04 "DM Serif Display",serif;color:#4B1E5A}
+.h1 .tag{margin-top:34px}
+.h2{background:#EBCFCB}
+.h2 .foto{left:0;top:0;width:560px;height:1350px}
+.h2 .pn{position:absolute;left:560px;right:0;top:0;bottom:0;padding:130px 70px 0 70px}
+.h2 h3{margin:26px 0 0;font:400 78px/1.04 "DM Serif Display",serif;color:#2A1030}
+.h2 p{margin:34px 0 0;font:400 30px/1.5 "Plus Jakarta Sans";color:#4B1E5A}
+.h3{background:linear-gradient(160deg,#FBF8F4,#EFE7F3)}
+.h3 .arc{position:absolute;left:190px;top:80px;width:700px;height:820px;border-radius:999px 999px 24px 24px;overflow:hidden;outline:1px solid #B8925A;outline-offset:12px}
+.h3 .arc img{inset:0;width:100%;height:100%}
+.h3 h3{position:absolute;left:90px;right:90px;top:985px;margin:0;text-align:center;font:400 82px/1.04 "DM Serif Display",serif;color:#4B1E5A}
+.h3 .tag{position:absolute;left:0;right:0;top:1230px;text-align:center}
+.h4{background:#2A1030}
+.h4 .foto{left:0;top:0;width:1080px;height:1350px}
+.h4 .vel{position:absolute;inset:0;background:linear-gradient(to top,rgba(42,16,48,.95) 0%,rgba(42,16,48,.55) 34%,rgba(42,16,48,0) 60%)}
+.h4 .txt{position:absolute;left:90px;right:90px;bottom:130px}
+.h4 h3{margin:26px 0 0;font:400 86px/1.02 "DM Serif Display",serif;color:#FBF8F4}
+.h4 h3 em{color:#D9B77E}
+.h5{background:#EFE7F3}
+.h5 .foto{left:90px;top:90px;width:900px;height:780px;border-radius:24px}
+.h5 h3{position:absolute;left:90px;top:910px;margin:0;font:400 70px/1.04 "DM Serif Display",serif;color:#4B1E5A}
+.h5 ul{position:absolute;left:90px;right:90px;top:1090px;margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:14px}
+.h5 li{height:62px;display:flex;align-items:center;padding:0 30px;border-radius:999px;border:1.5px solid #4B1E5A;font:800 26px "Plus Jakarta Sans";color:#4B1E5A;letter-spacing:.04em}
+.h5 .rod{position:absolute;left:90px;bottom:60px;font:400 28px "Plus Jakarta Sans";color:#6B6270}
+
+/* P: retrato dela, outros fundos */
+.p1{background:#EBCFCB}
+.p1 .foto{left:0;top:0;width:1080px;height:1350px;object-position:50% 16%}
+.p1 .pn{position:absolute;left:70px;right:70px;bottom:70px;background:#FBF8F4;border-radius:28px;padding:50px 56px;box-shadow:0 30px 60px -30px rgba(42,16,48,.55)}
+.p1 h3{margin:22px 0 0;font:400 64px/1.05 "DM Serif Display",serif;color:#4B1E5A}
+.p2{background:#FBF8F4}
+.p2 .foto{left:90px;top:90px;width:900px;height:900px;border-radius:50% 50% 24px 24px / 38% 38% 24px 24px;object-position:50% 20%}
+.p2 h3{position:absolute;left:90px;right:90px;top:1030px;margin:0;font:400 76px/1.04 "DM Serif Display",serif;color:#2A1030}
+.p2 .nm{position:absolute;left:90px;top:1250px;font:800 24px "Plus Jakarta Sans";letter-spacing:.2em;color:#B8925A}
+.p2.bl{background:#EBCFCB}.p2.lv{background:#E3D6EC}
+.n1{background:#E3D6EC}
+.n1 .big{position:absolute;left:0;right:0;top:40px;text-align:center;font:400 330px/1 "DM Serif Display",serif;font-style:italic;color:#fff;letter-spacing:-.02em}
+.n1 .foto{left:0;top:230px;width:1080px;height:1000px;object-position:50% 22%}
+.n1 .faixa{position:absolute;left:0;right:0;bottom:0;height:120px;background:#2A1030;color:#FBF8F4;display:flex;align-items:center;justify-content:center;font:800 28px "Plus Jakarta Sans";letter-spacing:.22em}
+/* C: carrossel */
+.k1{background:#2A1030}
+.k1 .arc{position:absolute;left:190px;top:110px;width:700px;height:740px;border-radius:999px 999px 24px 24px;overflow:hidden;outline:1px solid #D9B77E;outline-offset:12px}
+.k1 .arc img{inset:0;width:100%;height:100%}
+.k1 h3{position:absolute;left:90px;right:90px;top:930px;margin:0;text-align:center;font:400 86px/1.04 "DM Serif Display",serif;color:#FBF8F4}
+.k1 h3 em{color:#D9B77E}
+.k1 .arr{position:absolute;left:0;right:0;bottom:70px;text-align:center;font:600 28px "Plus Jakarta Sans";color:#EBCFCB;letter-spacing:.1em}
+.k{background:#FBF8F4}
+.k .n{position:absolute;left:90px;top:80px;font:italic 400 300px/1 "DM Serif Display",serif;color:#EBCFCB}
+.k h3{position:absolute;left:90px;right:90px;top:430px;margin:0;font:400 78px/1.05 "DM Serif Display",serif;color:#4B1E5A}
+.k p{position:absolute;left:90px;right:90px;top:660px;margin:0;font:400 38px/1.5 "Plus Jakarta Sans";color:#1F1A22}
+.k .foto{left:90px;bottom:90px;width:380px;height:380px;border-radius:50%;border:2px solid #B8925A}
+.k .fio{position:absolute;left:90px;top:600px}
+.k .pg{position:absolute;right:90px;bottom:100px;font:800 24px "Plus Jakarta Sans";letter-spacing:.2em;color:#6B6270}
+.k6{background:#EFE7F3}
+.k6 .av{position:absolute;left:340px;top:130px;width:400px;height:400px;border-radius:50%;overflow:hidden;border:2px solid #B8925A}
+.k6 .av img{inset:0;width:100%;height:100%;object-position:50% 25%}
+.k6 h3{position:absolute;left:90px;right:90px;top:600px;margin:0;text-align:center;font:400 80px/1.05 "DM Serif Display",serif;color:#4B1E5A}
+.k6 .btn{position:absolute;left:260px;right:260px;top:960px;height:100px;border-radius:999px;background:#E3A72F;color:#1F1A22;font:800 32px "Plus Jakarta Sans";display:flex;align-items:center;justify-content:center}
+.k6 .conf{position:absolute;left:0;right:0;top:1100px;text-align:center;font:italic 400 24px "Plus Jakarta Sans";color:#6B6270}
+.k6 .fio{position:absolute;left:492px;top:570px}
+</style></head><body><div class="wrap">
+<span class="chip">DEMONSTRAÇÃO PRIVADA · RODADA 2</span>
+<h1 style="margin-top:14px">Posts do Instagram: <em>o seu cabelo</em>, frase e carrossel</h1>
+<p class="lead">Aqui o protagonista é o cabelo que você faz, com uma frase que encaixa, no estilo que os melhores salões usam. Mais abaixo, jeitos novos de usar a sua foto, sem aquele roxo pesado por trás. As frases são sugestão para você ajustar.</p>
+<div class="nota"><b>Sobre as fotos de cabelo:</b> são do seu próprio Instagram. Usei só para o exemplo. Antes de publicar qualquer uma, a gente confirma com a cliente que aparece.</div>
+
+<h2>1. Cabelo + frase: <em>cinco jeitos</em></h2>
+<p class="lead">Cada um serve para um tipo de post. O primeiro e o terceiro funcionam para resultados. O segundo para frase de marca. O quarto é um pôster. O quinto lista serviços.</p>
+<div class="cards">
+
+<div class="card"><div class="frame"><div class="ab h1"><img class="foto" src="../assets/ig/cacho-grisalho.jpg" style="object-position:50% 28%" alt="Cliente de cabelo cacheado sorrindo"><div class="pn"><div class="fio"><i></i></div><h3>Rizos con <em>definición</em>, sin frizz.</h3><span class="tag">PELUQUERÍA &middot; ALICANTE</span></div></div></div><h3>Foto em cima, frase embaixo</h3><p>O mais seguro: a foto manda e o texto descansa.</p><span class="sug">frase: sugestão, você aprova</span></div>
+
+<div class="card"><div class="frame"><div class="ab h2"><img class="foto" src="../assets/ig/chanel-costas.jpg" style="object-position:30% 50%" alt="Corte chanel visto de costas"><div class="pn"><div class="fio"><i></i></div><h3>Un chanel <em>de precisión</em>.</h3><p>Línea limpia, peso en su sitio y brillo que dura.</p></div></div></div><h3>Metade foto, metade frase</h3><p>Fundo blush quente, como os pôsteres de salão.</p><span class="sug">frase: sugestão, você aprova</span></div>
+
+<div class="card"><div class="frame"><div class="ab h3"><div class="arc"><img src="../assets/ig/cacho-sorriso.jpg" style="object-position:50% 30%" alt="Cliente de cachos escuros sorrindo"></div><h3>Cuidar de ti <em>por entero</em>.</h3><div class="tag">PELUQUERÍA &middot; ALICANTE</div></div></div><h3>Arco dourado</h3><p>Mesmo arco da página do curso: a marca se repete.</p><span class="sug">frase: sugestão, você aprova</span></div>
+
+<div class="card"><div class="frame"><div class="ab h4"><img class="foto" src="../assets/ig/cacho-mel.jpg" style="object-position:50% 25%" alt="Cachos longos com reflexos mel"><div class="vel"></div><div class="txt"><div class="fio" style="background:#D9B77E"><i style="background:#D9B77E"></i></div><h3>Cachos <em>soltos</em>, vida cheia.</h3></div></div></div><h3>Pôster com véu ameixa</h3><p>Foto sangrando e frase em ouro. Tom da marca sem tapar o cabelo.</p><span class="sug">frase: sugestão, você aprova</span></div>
+
+<div class="card"><div class="frame"><div class="ab h5"><img class="foto" src="../assets/ig/chanel-lado.jpg" style="object-position:50% 40%" alt="Corte chanel escuro de lado"><h3>Peluquería en <em>Alicante</em></h3><ul><li>Corte</li><li>Color</li><li>Mechas</li><li>Alisado</li></ul><div class="rod">Pide cita por WhatsApp</div></div></div><h3>Serviços sobre a foto</h3><p>Os quatro serviços estão na sua bio.</p><span class="sug">lista: confirmar com você</span></div>
+
+</div>
+
+<h2>2. A sua foto <em>sem o roxo pesado</em></h2>
+<p class="lead">Dois jeitos ficaram: o retrato em cúpula e o nome grande atrás. Troquei o fundo e usei fotos suas com o fundo claro do TikTok e do vídeo, para o retrato casar com a cor do post em vez de brigar com ela.</p>
+<div class="cards">
+
+<div class="card"><div class="frame"><div class="ab p2"><img class="foto" src="../assets/tratadas/hero-A-1080x1350.jpg" alt="Retrato da Juliana"><h3>Técnica é <em>cuidado</em> com método.</h3><div class="nm">JULIANA OLIVEIRA</div></div></div><h3>Cúpula creme (a que você gostou)</h3><p>Retrato original, fundo ameixa só dentro da cúpula.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+<div class="card"><div class="frame"><div class="ab p2 bl"><img class="foto" src="../assets/tiktok/avatar-blush.jpg" style="object-position:50% 20%" alt="Juliana sorrindo com a tesoura"><h3>Cabelo bonito começa na <em>mão que sabe</em>.</h3><div class="nm">JULIANA OLIVEIRA</div></div></div><h3>Cúpula blush, foto do TikTok</h3><p>Fundo da foto e do post na mesma cor: a foto se encaixa.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+<div class="card"><div class="frame"><div class="ab p2 lv"><img class="foto" src="../assets/tiktok/avatar-lavanda.jpg" style="object-position:50% 20%" alt="Juliana sorrindo com a tesoura"><h3>Do corte ao <em>acabamento</em>, com cuidado.</h3><div class="nm">PELUQUERÍA &middot; ALICANTE</div></div></div><h3>Cúpula lavanda</h3><p>Mesma ideia em lavanda, mais calma.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+<div class="card"><div class="frame"><div class="ab n1"><div class="big">Juliana</div><img class="foto" src="../assets/tiktok/avatar-lavanda.jpg" alt="Juliana sorrindo com a tesoura"><div class="faixa">CABELEIREIRA &middot; PROFESSORA &middot; ALICANTE</div></div></div><h3>Nome grande atrás, fundo lavanda</h3><p>Foto sem retângulo: o fundo da foto é o do post. Faixa escura para o subtítulo ter contraste.</p><span class="sug">texto: confirmar</span></div>
+
+<div class="card"><div class="frame"><div class="ab n1 n2"><div class="big">Juliana</div><img class="foto" src="../assets/tratadas/hero-A-1080x1350.jpg" style="object-position:50% 12%" alt="Retrato da Juliana"><div class="faixa">CABELEIREIRA &middot; PROFESSORA &middot; ALICANTE</div></div></div><h3>Nome grande atrás, retrato de estúdio</h3><p>Mesma ideia com o retrato escuro. Subtítulo agora legível.</p><span class="sug">texto: confirmar</span></div>
+
+<div class="card"><div class="frame"><div class="ab p1"><img class="foto" src="../assets/tiktok/video-oculos-chapinha.jpg" alt="Juliana no salão com a chapinha"><div class="pn"><div class="fio"><i></i></div><h3>O cabelo que você tem, <em>do seu jeito</em>.</h3></div></div></div><h3>No salão, com cartão creme</h3><p>Foto de vídeo sua trabalhando. O cartão tapa o fundo do corpo.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+</div>
+
+<h2>3. Carrossel: <em>cuidar dos cachos</em> em 6 telas</h2>
+<p class="lead">Carrossel é o que mais salva e compartilha. Capa que promete, quatro dicas curtas e uma chamada final para marcar hora. As dicas são genéricas e conhecidas; você troca pelas suas. Deslize para o lado.</p>
+<div class="strip" tabindex="0" aria-label="Carrossel de 6 telas">
+
+<div class="card"><div class="frame"><div class="ab k1"><div class="arc"><img src="../assets/ig/cacho-longo.jpg" style="object-position:50% 20%" alt="Cachos longos loiros e mel"></div><h3>5 claves para cuidar tus <em>rizos</em></h3><div class="arr">DESLIZA &rarr;</div></div></div><h3>1 · Capa</h3></div>
+
+<div class="card"><div class="frame"><div class="ab k"><div class="n">1</div><h3>Hidrata <em>antes</em> de definir</h3><div class="fio"></div><p>Un rizo seco se encrespa. Primero mascarilla o acondicionador, después el producto de definir.</p><img class="foto" src="../assets/ig/cacho-mel.jpg" style="object-position:50% 30%" alt=""><div class="pg">1 / 4</div></div></div><h3>2 · Dica</h3></div>
+
+<div class="card"><div class="frame"><div class="ab k"><div class="n">2</div><h3>Peina con el pelo <em>mojado</em></h3><div class="fio"></div><p>Con acondicionador y peine de púas anchas. Seco, el rizo se rompe y pierde forma.</p><img class="foto" src="../assets/ig/cacho-loiro.jpg" style="object-position:50% 30%" alt=""><div class="pg">2 / 4</div></div></div><h3>3 · Dica</h3></div>
+
+<div class="card"><div class="frame"><div class="ab k"><div class="n">3</div><h3>Seca sin <em>frotar</em></h3><div class="fio"></div><p>Una camiseta de algodón o una toalla de microfibra, a toques suaves, no con fuerza.</p><img class="foto" src="../assets/ig/cacho-sorriso.jpg" style="object-position:50% 30%" alt=""><div class="pg">3 / 4</div></div></div><h3>4 · Dica</h3></div>
+
+<div class="card"><div class="frame"><div class="ab k"><div class="n">4</div><h3>Corta las puntas <em>a tiempo</em></h3><div class="fio"></div><p>Cada tres meses, más o menos. Las puntas abiertas deshacen el rizo antes de tiempo.</p><img class="foto" src="../assets/ig/cacho-grisalho.jpg" style="object-position:50% 30%" alt=""><div class="pg">4 / 4</div></div></div><h3>5 · Dica</h3></div>
+
+<div class="card"><div class="frame"><div class="ab k6"><div class="av"><img src="../assets/tratadas/avatar-800.jpg" alt="Juliana Oliveira"></div><div class="fio"><i></i></div><h3>¿Lo vemos en <em>tu pelo</em>?</h3><div class="btn">Pide cita por WhatsApp</div><div class="conf">[confirmar el enlace y el horario]</div></div></div><h3>6 · Chamada</h3></div>
+
+</div>
+<div class="nota">Dicas, frases e o espanhol são sugestões em tom neutro e conhecido. Você corrige com a sua técnica. O "a cada três meses" é regra geral e você pode mudar.</div>
+
+</div>
+<script>
+(function(){var q=new URLSearchParams(location.search).get('solo');if(q===null)return;var l=[].slice.call(document.querySelectorAll('.cards .frame,.strip .frame'));var a=l[+q].firstElementChild.cloneNode(true);document.body.innerHTML='';document.body.style.cssText='margin:0;background:#fff;overflow:hidden';a.style.cssText='position:absolute;left:0;top:0;transform:none';document.body.appendChild(a)})();
+function fit(){document.querySelectorAll('.frame').forEach(function(f){var a=f.firstElementChild;if(!a)return;var s=f.clientWidth/1080;a.style.transform='scale('+s+')'})}
+addEventListener('resize',fit);addEventListener('load',fit);fit();
+</script></body></html>

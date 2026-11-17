@@ -1,0 +1,7 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" role="img"><!-- Depende das fontes DM Serif Display e Plus Jakarta Sans (Google Fonts, carregadas pelo @import abaixo). O texto fica como <text>, nao como curvas. Abra direto no navegador; dentro de <img> as fontes nao carregam. --><style>@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Plus+Jakarta+Sans:wght@400;600;800&amp;display=swap");</style><title>Selo opcional Fios &amp; Flash · Escola online</title><rect width="300" height="300" fill="#2A1030"/>
+<circle cx="150" cy="150" r="140" fill="none" stroke="#D9B77E" stroke-width="1.2"/><circle cx="150" cy="150" r="90" fill="none" stroke="#D9B77E" stroke-width=".8"/>
+<defs><path id="ring" d="M150 150m-108 0a108 108 0 1 1 216 0a108 108 0 1 1-216 0"/></defs>
+<text font-family="'Plus Jakarta Sans',Arial,sans-serif" font-weight="600" font-size="18" fill="#EBCFCB"><textPath href="#ring" textLength="670" lengthAdjust="spacing">FIOS &amp; FLASH · ESCOLA ONLINE · </textPath></text>
+<g transform="translate(99.0 82.0) scale(0.34)"><path d="M30 370V150A120 120 0 0 1 270 150V370Z" fill="none" stroke="#D9B77E" stroke-width="2"/>
+<circle cx="158" cy="232" r="66" fill="none" stroke="#EBCFCB" stroke-width="6"/>
+<text x="138" y="300" text-anchor="middle" font-family="'DM Serif Display',Georgia,serif" font-style="italic" font-size="240" fill="#FBF8F4">J</text></g></svg>
