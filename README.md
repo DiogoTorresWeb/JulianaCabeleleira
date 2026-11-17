@@ -11,7 +11,7 @@ Abra **[apresentacao/index.html](apresentacao/index.html)**. Ela leva a todo o r
 | `apresentacao/` | Quem sou eu, o que eu vi no que você já tem, o que preparei e os próximos passos |
 | `pagina-curso-v3/` | A página de venda do curso pensada para o celular: rosto, preço e botão já na primeira tela (mesma oferta, mesmo preço, mesma garantia) |
 | `pagina-curso-v2/` | A primeira versão da página do curso, para comparar |
-| `marca/` | Logo, avatar, banner e miniaturas do YouTube, e os posts do Instagram (dois conjuntos e um carrossel) |
+| `marca/` | Logo, avatar, banner e miniaturas do YouTube, e os posts do Instagram (com a foto nova de estúdio e um carrossel) |
 | `instagram/` | O perfil do salão reorganizado e a análise ponto a ponto, antes e depois |
 | `entrega/posts/` | Todos os posts prontos em imagem (1080×1350), organizados por tipo. Há uma vista geral em `_visao-geral.jpg` e um guia em `entrega/LEIA.md` |
 | `assets/` | As fotos usadas: as suas (tratadas), as de cabelo do seu Instagram e as do seu TikTok |

@@ -72,6 +72,18 @@ h2{font-size:clamp(24px,4vw,34px);margin:56px 0 6px}
 .n1 .big{position:absolute;left:0;right:0;top:40px;text-align:center;font:400 330px/1 "DM Serif Display",serif;font-style:italic;color:#fff;letter-spacing:-.02em}
 .n1 .foto{left:0;top:230px;width:1080px;height:1000px;object-position:50% 22%}
 .n1 .faixa{position:absolute;left:0;right:0;bottom:0;height:120px;background:#2A1030;color:#FBF8F4;display:flex;align-items:center;justify-content:center;font:800 28px "Plus Jakarta Sans";letter-spacing:.22em}
+.n1.pt{background:#15100d}.n1.pt .big{color:#F1E8F2;top:30px}.n1.pt .foto{top:250px;height:980px}.n1.pt .faixa{background:#D9B77E;color:#2A1030}
+.n1.lv2 .foto{top:250px;height:980px}
+.n1 .big{z-index:2}
+.h4 .deslz{margin-top:26px;font:600 28px "Plus Jakarta Sans";letter-spacing:.14em;color:#EBCFCB}
+.k1.k1b{background:#15100d}
+.h5.pt2{background:#15100d}.h5.pt2 h3{color:#FBF8F4}.h5.pt2 h3 em{color:#D9B77E}.h5.pt2 li{border-color:#D9B77E;color:#D9B77E}.h5.pt2 .rod{color:#EBCFCB}
+.k6.pt3{background:#15100d}.k6.pt3 h3{color:#FBF8F4}.k6.pt3 h3 em{color:#D9B77E}.k6.pt3 .conf{color:#EBCFCB}.k6.pt3 .av{border-color:#D9B77E}
+.e2{background:#15100d}.e2 h2{position:absolute;left:90px;top:130px;width:880px;margin:0;font:400 84px/1.02 "DM Serif Display",serif;color:#FBF8F4}.e2 h2 em{color:#D9B77E}
+.e2 .ret{left:500px;top:380px;width:580px;height:970px;object-position:50% 14%;-webkit-mask-image:linear-gradient(to right,transparent,#000 24%);mask-image:linear-gradient(to right,transparent,#000 24%)}
+.e2 ul{position:absolute;left:90px;top:520px;margin:0;padding:0;list-style:none;font:400 33px/1.75 "Plus Jakarta Sans";color:#EBCFCB}
+.e2 li:before{content:"";display:inline-block;width:9px;height:9px;background:#D9B77E;transform:rotate(45deg);margin-right:18px;vertical-align:middle}
+.e2 .btn{position:absolute;left:90px;top:1140px;height:84px;padding:0 48px;display:flex;align-items:center;border-radius:999px;background:#E3A72F;color:#1F1A22;font:800 30px "Plus Jakarta Sans"}
 /* C: carrossel */
 .k1{background:#2A1030}
 .k1 .arc{position:absolute;left:190px;top:110px;width:700px;height:740px;border-radius:999px 999px 24px 24px;overflow:hidden;outline:1px solid #D9B77E;outline-offset:12px}
@@ -103,33 +115,33 @@ h2{font-size:clamp(24px,4vw,34px);margin:56px 0 6px}
 <p class="lead">Cada um serve para um tipo de post. O primeiro e o terceiro funcionam para resultados. O segundo para frase de marca. O quarto é um pôster. O quinto lista serviços.</p>
 <div class="cards">
 
-<div class="card"><div class="frame"><div class="ab h1"><img class="foto" src="../assets/ig/cacho-grisalho.jpg" style="object-position:50% 28%" alt="Cliente de cabelo cacheado sorrindo"><div class="pn"><div class="fio"><i></i></div><h3>Rizos con <em>definición</em>, sin frizz.</h3><span class="tag">PELUQUERÍA &middot; ALICANTE</span></div></div></div><h3>Foto em cima, frase embaixo</h3><p>O mais seguro: a foto manda e o texto descansa.</p><span class="sug">frase: sugestão, você aprova</span></div>
+<div class="card"><div class="frame" data-n="h1"><div class="ab h1"><img class="foto" src="../assets/ig/cacho-grisalho.jpg" style="object-position:50% 28%" alt="Cliente de cabelo cacheado sorrindo"><div class="pn"><div class="fio"><i></i></div><h3>Rizos con <em>definición</em>, sin frizz.</h3><span class="tag">PELUQUERÍA &middot; ALICANTE</span></div></div></div><h3>Foto em cima, frase embaixo</h3><p>O mais seguro: a foto manda e o texto descansa.</p><span class="sug">frase: sugestão, você aprova</span></div>
 
-<div class="card"><div class="frame"><div class="ab h2"><img class="foto" src="../assets/ig/chanel-costas.jpg" style="object-position:30% 50%" alt="Corte chanel visto de costas"><div class="pn"><div class="fio"><i></i></div><h3>Un chanel <em>de precisión</em>.</h3><p>Línea limpia, peso en su sitio y brillo que dura.</p></div></div></div><h3>Metade foto, metade frase</h3><p>Fundo blush quente, como os pôsteres de salão.</p><span class="sug">frase: sugestão, você aprova</span></div>
+<div class="card"><div class="frame" data-n="h2"><div class="ab h2"><img class="foto" src="../assets/ig/chanel-costas.jpg" style="object-position:30% 50%" alt="Corte chanel visto de costas"><div class="pn"><div class="fio"><i></i></div><h3>Un chanel <em>de precisión</em>.</h3><p>Línea limpia, peso en su sitio y brillo que dura.</p></div></div></div><h3>Metade foto, metade frase</h3><p>Fundo blush quente, como os pôsteres de salão.</p><span class="sug">frase: sugestão, você aprova</span></div>
 
-<div class="card"><div class="frame"><div class="ab h3"><div class="arc"><img src="../assets/ig/cacho-sorriso.jpg" style="object-position:50% 30%" alt="Cliente de cachos escuros sorrindo"></div><h3>Cuidar de ti <em>por entero</em>.</h3><div class="tag">PELUQUERÍA &middot; ALICANTE</div></div></div><h3>Arco dourado</h3><p>Mesmo arco da página do curso: a marca se repete.</p><span class="sug">frase: sugestão, você aprova</span></div>
+<div class="card"><div class="frame" data-n="h3"><div class="ab h3"><div class="arc"><img src="../assets/ig/cacho-sorriso.jpg" style="object-position:50% 30%" alt="Cliente de cachos escuros sorrindo"></div><h3>Cuidar de ti <em>por entero</em>.</h3><div class="tag">PELUQUERÍA &middot; ALICANTE</div></div></div><h3>Arco dourado</h3><p>Mesmo arco da página do curso: a marca se repete.</p><span class="sug">frase: sugestão, você aprova</span></div>
 
-<div class="card"><div class="frame"><div class="ab h4"><img class="foto" src="../assets/ig/cacho-mel.jpg" style="object-position:50% 25%" alt="Cachos longos com reflexos mel"><div class="vel"></div><div class="txt"><div class="fio" style="background:#D9B77E"><i style="background:#D9B77E"></i></div><h3>Cachos <em>soltos</em>, vida cheia.</h3></div></div></div><h3>Pôster com véu ameixa</h3><p>Foto sangrando e frase em ouro. Tom da marca sem tapar o cabelo.</p><span class="sug">frase: sugestão, você aprova</span></div>
+<div class="card"><div class="frame" data-n="h4"><div class="ab h4"><img class="foto" src="../assets/ig/cacho-mel.jpg" style="object-position:50% 25%" alt="Cachos longos com reflexos mel"><div class="vel"></div><div class="txt"><div class="fio" style="background:#D9B77E"><i style="background:#D9B77E"></i></div><h3>Cachos <em>soltos</em>, vida cheia.</h3></div></div></div><h3>Pôster com véu ameixa</h3><p>Foto sangrando e frase em ouro. Tom da marca sem tapar o cabelo.</p><span class="sug">frase: sugestão, você aprova</span></div>
 
-<div class="card"><div class="frame"><div class="ab h5"><img class="foto" src="../assets/ig/chanel-lado.jpg" style="object-position:50% 40%" alt="Corte chanel escuro de lado"><h3>Peluquería en <em>Alicante</em></h3><ul><li>Corte</li><li>Color</li><li>Mechas</li><li>Alisado</li></ul><div class="rod">Pide cita por WhatsApp</div></div></div><h3>Serviços sobre a foto</h3><p>Os quatro serviços estão na sua bio.</p><span class="sug">lista: confirmar com você</span></div>
+<div class="card"><div class="frame" data-n="h5"><div class="ab h5"><img class="foto" src="../assets/ig/chanel-lado.jpg" style="object-position:50% 40%" alt="Corte chanel escuro de lado"><h3>Peluquería en <em>Alicante</em></h3><ul><li>Corte</li><li>Color</li><li>Mechas</li><li>Alisado</li></ul><div class="rod">Pide cita por WhatsApp</div></div></div><h3>Serviços sobre a foto</h3><p>Os quatro serviços estão na sua bio. Estilo "mega hair" do Renew.</p><span class="sug">lista: confirmar com você</span></div>
 
 </div>
 
-<h2>2. A sua foto <em>sem o roxo pesado</em></h2>
-<p class="lead">Dois jeitos ficaram: o retrato em cúpula e o nome grande atrás. Troquei o fundo e usei fotos suas com o fundo claro do TikTok e do vídeo, para o retrato casar com a cor do post em vez de brigar com ela.</p>
+<h2>2. A foto nova de <em>estúdio</em></h2>
+<p class="lead">Troquei todos os retratos pela foto de estúdio nova, com fundo preto quente. O preto casa com a foto: nada de retângulo estranho nem roxo pesado. Os dois que você gostou continuam: a cúpula e o nome grande.</p>
 <div class="cards">
 
-<div class="card"><div class="frame"><div class="ab p2"><img class="foto" src="../assets/tratadas/hero-A-1080x1350.jpg" alt="Retrato da Juliana"><h3>Técnica é <em>cuidado</em> com método.</h3><div class="nm">JULIANA OLIVEIRA</div></div></div><h3>Cúpula creme (a que você gostou)</h3><p>Retrato original, fundo ameixa só dentro da cúpula.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+<div class="card"><div class="frame" data-n="f1"><div class="ab p2"><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 14%" alt="Juliana Oliveira em estúdio, sorrindo com a tesoura"><h3>Técnica é <em>cuidado</em> com método.</h3><div class="nm">JULIANA OLIVEIRA</div></div></div><h3>Cúpula creme</h3><p>A que você gostou, agora com a foto de estúdio.</p><span class="sug">frase: sugestão, você ajusta</span></div>
 
-<div class="card"><div class="frame"><div class="ab p2 bl"><img class="foto" src="../assets/tiktok/avatar-blush.jpg" style="object-position:50% 20%" alt="Juliana sorrindo com a tesoura"><h3>Cabelo bonito começa na <em>mão que sabe</em>.</h3><div class="nm">JULIANA OLIVEIRA</div></div></div><h3>Cúpula blush, foto do TikTok</h3><p>Fundo da foto e do post na mesma cor: a foto se encaixa.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+<div class="card"><div class="frame" data-n="f2"><div class="ab p2 bl"><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 14%" alt="Juliana Oliveira em estúdio, sorrindo com a tesoura"><h3>Cabelo bonito começa na <em>mão que sabe</em>.</h3><div class="nm">JULIANA OLIVEIRA</div></div></div><h3>Cúpula blush</h3><p>Mesma ideia sobre fundo blush quente.</p><span class="sug">frase: sugestão, você ajusta</span></div>
 
-<div class="card"><div class="frame"><div class="ab p2 lv"><img class="foto" src="../assets/tiktok/avatar-lavanda.jpg" style="object-position:50% 20%" alt="Juliana sorrindo com a tesoura"><h3>Do corte ao <em>acabamento</em>, com cuidado.</h3><div class="nm">PELUQUERÍA &middot; ALICANTE</div></div></div><h3>Cúpula lavanda</h3><p>Mesma ideia em lavanda, mais calma.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+<div class="card"><div class="frame" data-n="f3"><div class="ab n1 pt"><div class="big">Juliana</div><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" alt="Juliana Oliveira em estúdio"><div class="faixa">CABELEIREIRA &middot; PROFESSORA &middot; ALICANTE</div></div></div><h3>Nome grande, fundo preto quente</h3><p>O nome na frente e a foto sem moldura. O subtítulo tem faixa dourada e contraste.</p><span class="sug">texto: confirmar</span></div>
 
-<div class="card"><div class="frame"><div class="ab n1"><div class="big">Juliana</div><img class="foto" src="../assets/tiktok/avatar-lavanda.jpg" alt="Juliana sorrindo com a tesoura"><div class="faixa">CABELEIREIRA &middot; PROFESSORA &middot; ALICANTE</div></div></div><h3>Nome grande atrás, fundo lavanda</h3><p>Foto sem retângulo: o fundo da foto é o do post. Faixa escura para o subtítulo ter contraste.</p><span class="sug">texto: confirmar</span></div>
+<div class="card"><div class="frame" data-n="f4"><div class="ab n1 lv2"><div class="big">Juliana</div><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" alt="Juliana Oliveira em estúdio"><div class="faixa">CABELEIREIRA &middot; PROFESSORA &middot; ALICANTE</div></div></div><h3>Nome grande, fundo lavanda</h3><p>O mesmo post, com o nome em branco sobre lavanda.</p><span class="sug">texto: confirmar</span></div>
 
-<div class="card"><div class="frame"><div class="ab n1 n2"><div class="big">Juliana</div><img class="foto" src="../assets/tratadas/hero-A-1080x1350.jpg" style="object-position:50% 12%" alt="Retrato da Juliana"><div class="faixa">CABELEIREIRA &middot; PROFESSORA &middot; ALICANTE</div></div></div><h3>Nome grande atrás, retrato de estúdio</h3><p>Mesma ideia com o retrato escuro. Subtítulo agora legível.</p><span class="sug">texto: confirmar</span></div>
+<div class="card"><div class="frame" data-n="f5"><div class="ab h4"><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 22%" alt="Juliana Oliveira em estúdio"><div class="vel"></div><div class="txt"><div class="fio" style="background:#D9B77E"><i style="background:#D9B77E"></i></div><h3>Aprenda com quem <em>faz</em>.</h3></div></div></div><h3>Pôster com frase</h3><p>Foto sangrando, véu escuro embaixo e a frase em ouro.</p><span class="sug">frase: sugestão, você ajusta</span></div>
 
-<div class="card"><div class="frame"><div class="ab p1"><img class="foto" src="../assets/tiktok/video-oculos-chapinha.jpg" alt="Juliana no salão com a chapinha"><div class="pn"><div class="fio"><i></i></div><h3>O cabelo que você tem, <em>do seu jeito</em>.</h3></div></div></div><h3>No salão, com cartão creme</h3><p>Foto de vídeo sua trabalhando. O cartão tapa o fundo do corpo.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+<div class="card"><div class="frame" data-n="f6"><div class="ab p1"><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" alt="Juliana Oliveira em estúdio"><div class="pn"><div class="fio"><i></i></div><h3>O cabelo que você tem, <em>do seu jeito</em>.</h3></div></div></div><h3>Foto cheia + cartão creme</h3><p>O texto num cartão, sem competir com o rosto.</p><span class="sug">frase: sugestão, você ajusta</span></div>
 
 </div>
 
@@ -137,24 +149,40 @@ h2{font-size:clamp(24px,4vw,34px);margin:56px 0 6px}
 <p class="lead">Carrossel é o que mais salva e compartilha. Capa que promete, quatro dicas curtas e uma chamada final para marcar hora. As dicas são genéricas e conhecidas; você troca pelas suas. Deslize para o lado.</p>
 <div class="strip" tabindex="0" aria-label="Carrossel de 6 telas">
 
-<div class="card"><div class="frame"><div class="ab k1"><div class="arc"><img src="../assets/ig/cacho-longo.jpg" style="object-position:50% 20%" alt="Cachos longos loiros e mel"></div><h3>5 claves para cuidar tus <em>rizos</em></h3><div class="arr">DESLIZA &rarr;</div></div></div><h3>1 · Capa</h3></div>
+<div class="card"><div class="frame" data-n="k1"><div class="ab k1"><div class="arc"><img src="../assets/ig/cacho-longo.jpg" style="object-position:50% 20%" alt="Cachos longos loiros e mel"></div><h3>5 claves para cuidar tus <em>rizos</em></h3><div class="arr">DESLIZA &rarr;</div></div></div><h3>1 · Capa</h3></div>
 
-<div class="card"><div class="frame"><div class="ab k"><div class="n">1</div><h3>Hidrata <em>antes</em> de definir</h3><div class="fio"></div><p>Un rizo seco se encrespa. Primero mascarilla o acondicionador, después el producto de definir.</p><img class="foto" src="../assets/ig/cacho-mel.jpg" style="object-position:50% 30%" alt=""><div class="pg">1 / 4</div></div></div><h3>2 · Dica</h3></div>
+<div class="card"><div class="frame" data-n="k2"><div class="ab k"><div class="n">1</div><h3>Hidrata <em>antes</em> de definir</h3><div class="fio"></div><p>Un rizo seco se encrespa. Primero mascarilla o acondicionador, después el producto de definir.</p><img class="foto" src="../assets/ig/cacho-mel.jpg" style="object-position:50% 30%" alt=""><div class="pg">1 / 4</div></div></div><h3>2 · Dica</h3></div>
 
-<div class="card"><div class="frame"><div class="ab k"><div class="n">2</div><h3>Peina con el pelo <em>mojado</em></h3><div class="fio"></div><p>Con acondicionador y peine de púas anchas. Seco, el rizo se rompe y pierde forma.</p><img class="foto" src="../assets/ig/cacho-loiro.jpg" style="object-position:50% 30%" alt=""><div class="pg">2 / 4</div></div></div><h3>3 · Dica</h3></div>
+<div class="card"><div class="frame" data-n="k3"><div class="ab k"><div class="n">2</div><h3>Peina con el pelo <em>mojado</em></h3><div class="fio"></div><p>Con acondicionador y peine de púas anchas. Seco, el rizo se rompe y pierde forma.</p><img class="foto" src="../assets/ig/cacho-loiro.jpg" style="object-position:50% 30%" alt=""><div class="pg">2 / 4</div></div></div><h3>3 · Dica</h3></div>
 
-<div class="card"><div class="frame"><div class="ab k"><div class="n">3</div><h3>Seca sin <em>frotar</em></h3><div class="fio"></div><p>Una camiseta de algodón o una toalla de microfibra, a toques suaves, no con fuerza.</p><img class="foto" src="../assets/ig/cacho-sorriso.jpg" style="object-position:50% 30%" alt=""><div class="pg">3 / 4</div></div></div><h3>4 · Dica</h3></div>
+<div class="card"><div class="frame" data-n="k4"><div class="ab k"><div class="n">3</div><h3>Seca sin <em>frotar</em></h3><div class="fio"></div><p>Una camiseta de algodón o una toalla de microfibra, a toques suaves, no con fuerza.</p><img class="foto" src="../assets/ig/cacho-sorriso.jpg" style="object-position:50% 30%" alt=""><div class="pg">3 / 4</div></div></div><h3>4 · Dica</h3></div>
 
-<div class="card"><div class="frame"><div class="ab k"><div class="n">4</div><h3>Corta las puntas <em>a tiempo</em></h3><div class="fio"></div><p>Cada tres meses, más o menos. Las puntas abiertas deshacen el rizo antes de tiempo.</p><img class="foto" src="../assets/ig/cacho-grisalho.jpg" style="object-position:50% 30%" alt=""><div class="pg">4 / 4</div></div></div><h3>5 · Dica</h3></div>
+<div class="card"><div class="frame" data-n="k5"><div class="ab k"><div class="n">4</div><h3>Corta las puntas <em>a tiempo</em></h3><div class="fio"></div><p>Cada tres meses, más o menos. Las puntas abiertas deshacen el rizo antes de tiempo.</p><img class="foto" src="../assets/ig/cacho-grisalho.jpg" style="object-position:50% 30%" alt=""><div class="pg">4 / 4</div></div></div><h3>5 · Dica</h3></div>
 
-<div class="card"><div class="frame"><div class="ab k6"><div class="av"><img src="../assets/tratadas/avatar-800.jpg" alt="Juliana Oliveira"></div><div class="fio"><i></i></div><h3>¿Lo vemos en <em>tu pelo</em>?</h3><div class="btn">Pide cita por WhatsApp</div><div class="conf">[confirmar el enlace y el horario]</div></div></div><h3>6 · Chamada</h3></div>
+<div class="card"><div class="frame" data-n="k6"><div class="ab k6"><div class="av"><img src="../assets/tratadas/avatar-800.jpg" alt="Juliana Oliveira"></div><div class="fio"><i></i></div><h3>¿Lo vemos en <em>tu pelo</em>?</h3><div class="btn">Pide cita por WhatsApp</div><div class="conf">[confirmar el enlace y el horario]</div></div></div><h3>6 · Chamada</h3></div>
 
 </div>
 <div class="nota">Dicas, frases e o espanhol são sugestões em tom neutro e conhecido. Você corrige com a sua técnica. O "a cada três meses" é regra geral e você pode mudar.</div>
+<h2>4. Mais posts com a <em>foto nova</em></h2>
+<p class="lead">Capas de carrossel e posts de apresentação, de chamada e do curso, para a grade do perfil. Cada capa promete uma coisa e leva ao carrossel.</p>
+<div class="cards">
+
+<div class="card"><div class="frame" data-n="c1"><div class="ab h4"><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 18%" alt="Juliana Oliveira em estúdio"><div class="vel"></div><div class="txt"><div class="fio" style="background:#D9B77E"><i style="background:#D9B77E"></i></div><h3>5 claves para cuidar tus <em>rizos</em></h3><div class="deslz">DESLIZA &rarr;</div></div></div></div><h3>Capa de carrossel 1</h3><p>A capa que promete, com ela olhando para quem passa.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+<div class="card"><div class="frame" data-n="c2"><div class="ab k1 k1b"><div class="arc"><img src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 10%" alt="Juliana Oliveira em estúdio"></div><h3>Tu pelo, <em>paso a paso</em></h3><div class="arr">DESLIZA &rarr;</div></div></div><h3>Capa de carrossel 2</h3><p>Arco dourado, igual ao da página do curso.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+<div class="card"><div class="frame" data-n="c3"><div class="ab h5 pt2"><img class="foto" src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 14%" alt="Juliana Oliveira em estúdio"><h3>Soy Juliana, <em>peluquera</em> en Alicante</h3><ul><li>Corte</li><li>Color</li><li>Mechas</li><li>Alisado</li></ul><div class="rod">Pide cita por WhatsApp</div></div></div><h3>Apresentação (fixado)</h3><p>Quem é, onde está e o que faz. Serviços da bio dela.</p><span class="sug">lista: confirmar com você</span></div>
+
+<div class="card"><div class="frame" data-n="c4"><div class="ab k6 pt3"><div class="av"><img src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 16%" alt="Juliana Oliveira"></div><div class="fio"><i></i></div><h3>¿Lo vemos en <em>tu pelo</em>?</h3><div class="btn">Pide cita por WhatsApp</div><div class="conf">[confirmar el enlace y el horario]</div></div></div><h3>Chamada para marcar hora</h3><p>O fixado "Cómo reservar".</p><span class="sug">link e horário: confirmar</span></div>
+
+<div class="card"><div class="frame" data-n="c5"><div class="ab e2"><h2>Curso online de <em>cabeleireira</em></h2><img class="ret" src="../assets/tratadas/hero-estudio-ia.jpg" style="object-position:50% 14%" alt="Juliana Oliveira em estúdio"><ul><li>5 módulos</li><li>Certificado</li><li>Mentorias ao vivo</li><li>Comunidade</li><li>Garantia de 7 dias</li></ul><div class="btn">Link na bio</div></div></div><h3>Chamada do curso</h3><p>Sem preço. O preço só entra com o seu aval.</p><span class="sug">frase: sugestão, você ajusta</span></div>
+
+</div>
+
 
 </div>
 <script>
-(function(){var q=new URLSearchParams(location.search).get('solo');if(q===null)return;var l=[].slice.call(document.querySelectorAll('.cards .frame,.strip .frame'));var a=l[+q].firstElementChild.cloneNode(true);document.body.innerHTML='';document.body.style.cssText='margin:0;background:#fff;overflow:hidden';a.style.cssText='position:absolute;left:0;top:0;transform:none';document.body.appendChild(a)})();
+(function(){var q=new URLSearchParams(location.search).get('solo');if(q===null)return;var l=[].slice.call(document.querySelectorAll('.frame[data-n]'));var f=l.filter(function(x){return x.getAttribute('data-n')===q})[0]||l[+q];var a=f.firstElementChild.cloneNode(true);document.body.innerHTML='';document.body.style.cssText='margin:0;background:#fff;overflow:hidden';a.style.cssText='position:absolute;left:0;top:0;transform:none';document.body.appendChild(a)})();
 function fit(){document.querySelectorAll('.frame').forEach(function(f){var a=f.firstElementChild;if(!a)return;var s=f.clientWidth/1080;a.style.transform='scale('+s+')'})}
 addEventListener('resize',fit);addEventListener('load',fit);fit();
 </script></body></html>
