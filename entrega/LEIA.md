@@ -20,4 +20,4 @@ Vista geral de tudo numa folha: `posts/_visao-geral.jpg`.
 - **Resolução:** a melhor foto de rosto vem do TikTok (655 px). Serve para post, não para impressão. A solução de verdade é a sessão com o parceiro de foto.
 
 ## Como refazer as imagens
-Cada post está em `marca/posts.html` e `marca/posts-v2.html`. Para exportar um, abrir a página com `?solo=N` e tirar captura em 1080×1350 (o número é a ordem do post na página).
+Cada post está em `marca/posts-v2.html`. Para exportar um, abrir a página com `?solo=nome` (o nome vem do data-n do post, ex. f1, c3) e capturar em 1080×1350.
