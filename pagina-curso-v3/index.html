@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curso online de cabeleireira com Juliana Oliveira</title>
+<meta name="description" content="Curso online de cabeleireira com a Juliana Oliveira: 5 módulos, certificado, mentorias ao vivo, comunidade e garantia de 7 dias.">
+<meta name="theme-color" content="#2A1030">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ameixa:#2A1030; --roxo:#4B1E5A; --lavanda:#EFE7F3; --creme:#FBF8F4; --blush:#EBCFCB;
+  --ouro:#B8925A; --ouro-claro:#D9B77E; --mostarda:#E3A72F; --grafite:#1F1A22; --mute:#6B6270;
+  --sombra:0 18px 40px -18px rgba(42,16,48,.35);
+  --sombra-up:0 26px 48px -18px rgba(42,16,48,.45);
+  --serif:"DM Serif Display",Georgia,serif; --sans:"Plus Jakarta Sans",system-ui,sans-serif;
+  --grao:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--grafite);background:var(--creme);overflow-x:hidden;padding-bottom:64px}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--roxo);outline-offset:3px;border-radius:6px}
+.escuro :focus-visible,.faixa :focus-visible,.barra :focus-visible{outline-color:var(--ouro-claro)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;color:var(--roxo)}
+h1 em,h2 em{font-style:italic}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.estreito{max-width:760px}
+.hero .wrap,.quem .wrap,.junto .wrap,.garantia .wrap,.prova,.grade,.cits,.quatro{grid-template-columns:minmax(0,1fr)}
+.wrap>*,.prova>*{min-width:0}
+section{position:relative;padding:68px 0}
+.centro{text-align:center}
+.rotulo{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:14px}
+.escuro .rotulo{color:var(--blush)}
+h2{font-size:clamp(30px,6.2vw,46px);margin-bottom:18px}
+.escuro h1,.escuro h2,.escuro h3{color:var(--creme)}
+.escuro h1 em,.escuro h2 em{color:var(--ouro-claro)}
+.escuro{background:var(--ameixa);color:#F1E8F2;isolation:isolate}
+.escuro::before,.grao::before{content:"";position:absolute;inset:0;background:var(--grao);opacity:.04;mix-blend-mode:screen;pointer-events:none;z-index:-1}
+.lav{background:var(--lavanda)}
+.sub{color:var(--mute)}
+.escuro .sub{color:var(--blush)}
+.pend{color:var(--mute);font-style:italic}
+
+/* fio de ouro com losango, raminho, monograma */
+.fio{width:96px;height:1px;background:var(--ouro);position:relative;margin:0 0 22px}
+.fio::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;background:var(--ouro);transform:translate(-50%,-50%) rotate(45deg)}
+.escuro .fio{background:var(--ouro-claro)}.escuro .fio::after{background:var(--ouro-claro)}
+.centro .fio{margin-left:auto;margin-right:auto}
+.ramo{width:64px;height:auto;color:var(--ouro);display:block}
+.centro .ramo{margin:0 auto 18px}
+.escuro .ramo{color:var(--ouro-claro)}
+.mono{position:absolute;width:150px;height:auto;right:12px;bottom:10px;opacity:.06;pointer-events:none;color:var(--roxo)}
+.escuro .mono{color:var(--creme)}
+
+/* botao */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 32px;border-radius:999px;background:var(--mostarda);color:var(--grafite);font:800 17px/1 var(--sans);text-decoration:none;box-shadow:0 14px 26px -14px rgba(227,167,47,.8);transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);background:#D49A25;box-shadow:0 18px 30px -14px rgba(227,167,47,.9)}
+.btn:active{transform:translateY(0)}
+.btn.bloco{width:100%}
+
+/* faixa demonstracao */
+.faixa{background:var(--ameixa);color:var(--blush);min-height:44px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;line-height:1.3;border-bottom:1px solid rgba(217,183,126,.35)}
+.faixa a{display:inline-flex;align-items:center;min-height:44px;padding:4px 14px;text-decoration:none}
+.faixa a span{border-bottom:1px solid var(--ouro-claro);color:var(--creme)}
+
+/* hero */
+.hero{padding:40px 0 64px}
+.hero .wrap{display:grid;gap:36px}
+.hero h1{font-size:clamp(36px,9.4vw,60px);margin-bottom:20px}
+.hero p.sub{font-size:18px;max-width:34em;margin-bottom:26px}
+.selos{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:14px;color:var(--blush)}
+.selos span::before{content:"";display:inline-block;width:6px;height:6px;margin-right:9px;vertical-align:middle;background:var(--ouro-claro);transform:rotate(45deg)}
+.arco{position:relative;border-radius:999px 999px 24px 24px;background:#4B1E5A;outline:1px solid var(--ouro-claro);outline-offset:10px;overflow:hidden;max-width:380px;margin:10px auto 0;width:calc(100% - 20px);box-shadow:var(--sombra-up)}
+.arco img{width:100%;aspect-ratio:4/5;object-fit:cover}
+
+/* quem ensina */
+.quem .wrap{display:grid;gap:34px;align-items:center}
+.inserto{max-width:300px;width:100%;margin:0 auto;border-radius:16px;background:var(--lavanda);overflow:hidden;box-shadow:var(--sombra)}
+.inserto img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.fatos{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.fatos li{padding-left:24px;position:relative}
+.fatos li::before{content:"";position:absolute;left:3px;top:.62em;width:7px;height:7px;background:var(--ouro);transform:rotate(45deg)}
+
+/* modulos */
+.grade{display:grid;gap:16px;margin-top:34px}
+.mod{background:var(--creme);border-radius:20px;padding:26px 24px;box-shadow:var(--sombra);transition:box-shadow .2s,transform .2s;position:relative;display:flex;flex-direction:column}
+.mod:hover{box-shadow:var(--sombra-up);transform:translateY(-2px)}
+.mod .n{font:italic 400 44px/1 var(--serif);color:var(--ouro);margin-bottom:6px}
+.mod h3{font-size:26px;margin-bottom:6px}
+.mod .aulas{font-weight:600;color:var(--roxo);font-size:15px}
+.mod .bonus{position:absolute;top:20px;right:20px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:var(--roxo);color:var(--creme);padding:5px 12px;border-radius:999px}
+.mod figure{margin:20px 0 0;text-align:center;background:var(--lavanda);border-radius:16px;padding:16px 10px 12px}
+.mod figure img{height:190px;width:auto;margin:0 auto;filter:drop-shadow(0 14px 14px rgba(42,16,48,.3))}
+.mod figcaption{font-size:13px;color:var(--mute);margin-top:8px}
+
+/* o que vem junto */
+.junto .wrap{display:grid;gap:40px;align-items:center}
+.cert{max-width:420px;margin:0 auto;width:100%}
+.cert img{transform:rotate(-4deg);filter:drop-shadow(0 22px 22px rgba(0,0,0,.45));border-radius:2px}
+.lista-v{list-style:none;padding:0;display:grid;gap:18px;margin-top:6px}
+.lista-v li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.lista-v svg{width:44px;height:44px;color:var(--ouro-claro)}
+.lista-v b{display:block;font-weight:800;color:var(--creme)}
+.lista-v span{color:var(--blush);font-size:15.5px}
+
+/* depoimentos */
+.cits{display:grid;gap:16px;margin-top:34px}
+.cit{background:#fff;border-radius:20px;padding:30px 26px 24px;box-shadow:var(--sombra);position:relative;transition:box-shadow .2s}
+.cit:hover{box-shadow:var(--sombra-up)}
+.cit::before{content:"\201C";position:absolute;left:20px;top:-6px;font:400 110px/1 var(--serif);color:var(--blush)}
+.cit p{font:400 22px/1.3 var(--serif);color:var(--roxo);position:relative;margin-bottom:16px;padding-top:30px}
+.cit cite{font-style:normal;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.prova{display:grid;gap:22px;margin-top:32px;background:var(--ameixa);border-radius:24px;padding:22px;box-shadow:var(--sombra-up);color:var(--creme);align-items:center}
+.prova .foto{border-radius:16px;overflow:hidden;background:#4B1E5A;max-width:300px;width:100%;margin:0 auto}
+.prova .foto img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.prova blockquote{font:400 21px/1.35 var(--serif)}
+.prova blockquote span{display:block;margin-top:12px;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--blush)}
+
+/* citacao + preco */
+.pre{padding:56px 0 8px}
+.pre q{display:block;font:italic 400 clamp(24px,5vw,32px)/1.25 var(--serif);color:var(--roxo);quotes:"\201C" "\201D"}
+.pre cite{display:block;margin-top:12px;font-style:normal;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.preco{padding:40px 0 68px}
+.cartao{background:#fff;border-radius:24px;padding:36px 26px 30px;box-shadow:var(--sombra-up);max-width:520px;margin:0 auto;text-align:center;position:relative;outline:1px solid var(--ouro);outline-offset:-9px}
+.cartao .de{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.valor{font:400 76px/1.05 var(--serif);color:var(--roxo);margin:6px 0 2px}
+.valor small{font-size:30px;margin-right:6px}
+.cartao ul{list-style:none;padding:0;text-align:left;margin:24px auto 26px;display:grid;gap:10px;max-width:340px}
+.cartao li{padding-left:26px;position:relative;font-size:16px}
+.cartao li::before{content:"";position:absolute;left:4px;top:.6em;width:7px;height:7px;background:var(--ouro);transform:rotate(45deg)}
+.mini{font-size:14px;color:var(--mute)}
+.cartao .mini{margin-top:14px}
+
+/* garantia */
+.garantia .wrap{display:grid;gap:22px;justify-items:center;text-align:center}
+.selo{width:112px;height:112px;color:var(--ouro-claro)}
+.garantia p.g{font:400 clamp(24px,5vw,32px)/1.25 var(--serif);color:var(--creme);max-width:20em}
+
+/* faq */
+details{background:#fff;border-radius:16px;margin-bottom:12px;box-shadow:0 10px 24px -16px rgba(42,16,48,.3)}
+summary{list-style:none;cursor:pointer;min-height:56px;padding:14px 56px 14px 22px;font-weight:600;color:var(--roxo);position:relative;display:flex;align-items:center;border-radius:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:24px;top:50%;width:8px;height:8px;border-right:2px solid var(--ouro);border-bottom:2px solid var(--ouro);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details p{padding:0 22px 20px;color:#3E3543}
+
+/* fecho */
+.fecho{text-align:center;padding:76px 0 84px}
+.fecho h2{font-size:clamp(32px,7vw,52px);max-width:15em;margin-left:auto;margin-right:auto}
+.fecho .txt{display:inline-flex;align-items:center;min-height:44px;margin-top:20px;color:var(--blush);font-size:15px}
+
+/* crescer */
+.crescer{background:var(--lavanda);border-top:1px dashed var(--ouro)}
+.demo-tag{display:inline-block;background:var(--ameixa);color:var(--blush);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:18px}
+.crescer .nota{max-width:38em;color:var(--mute);margin:0 auto 6px}
+.quatro{display:grid;gap:16px;margin-top:34px;text-align:left}
+.cr{background:var(--creme);border-radius:20px;padding:26px 24px;box-shadow:var(--sombra)}
+.cr svg{width:48px;height:48px;color:var(--ouro);margin-bottom:14px;stroke:var(--roxo)}
+.cr h3{font-size:23px;margin-bottom:6px}
+.cr p{font-size:15.5px;color:var(--mute)}
+.rodape{padding:26px 0;text-align:center;font-size:13px;color:var(--blush);background:var(--ameixa)}
+
+
+/* hero v3: celular primeiro */
+.hero{padding:22px 0 0}
+.hero .wrap{display:grid;gap:0;grid-template-areas:"topo" "foto" "oferta"}
+.hero .topo{grid-area:topo}.hero .fhero{grid-area:foto}.hero .oferta{grid-area:oferta}
+.hero h1{font-size:clamp(30px,8.4vw,52px);margin-bottom:6px}
+.fhero{margin:0 -20px;position:relative}
+.fhero img{width:100%;height:auto;aspect-ratio:1280/1400;object-fit:cover}
+.oferta{padding:0 0 34px;margin-top:-34px;position:relative}
+.oferta .linha{font:400 20px/1.25 var(--serif);color:var(--creme);margin-bottom:8px}
+.oferta .linha b{font-size:40px;color:var(--ouro-claro);font-weight:400;margin:0 4px}
+.oferta .linha span{font:600 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--blush);display:inline-block}
+.mini{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 16px;font-size:14px;color:var(--blush)}
+.mini li::before{content:"";display:inline-block;width:6px;height:6px;margin-right:8px;vertical-align:middle;background:var(--ouro-claro);transform:rotate(45deg)}
+.rapida{padding:36px 0 44px}
+.tira{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 14px;margin:0 -20px}
+.tira figure{margin:0;flex:0 0 82%;scroll-snap-align:start;background:#fff;border:1px solid #e9dff0;border-radius:18px;padding:18px;font-size:16px;line-height:1.5}
+.tira cite{display:block;margin-top:10px;font-style:normal;font-size:13px;color:var(--mute);font-weight:600}
+.aula{margin-top:22px}
+.poster{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--sombra)}
+.poster img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.poster .play{position:absolute;inset:0 auto 0 18px;margin:auto 0;width:68px;height:68px;border-radius:14px;background:rgba(75,30,90,.88)}
+.poster .play::after{content:"";position:absolute;left:27px;top:20px;border-left:22px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
+@media(min-width:1024px){
+  .hero{padding:56px 0 0}
+  .hero .wrap{grid-template-columns:minmax(0,6fr) minmax(0,5fr);grid-template-areas:"topo foto" "oferta foto";gap:0 8.333%;align-items:center}
+  .fhero{margin:0;border-radius:24px;overflow:hidden}
+  .oferta{margin-top:0;padding-bottom:56px}
+  .tira figure{flex:1 1 0}
+}
+
+/* barra fixa */
+.barra{position:fixed;left:0;right:0;bottom:0;height:64px;z-index:50;background:var(--ameixa);border-top:1px solid rgba(217,183,126,.45);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 16px;transform:translateY(110%);transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.barra.on{transform:none}
+.barra .p{color:var(--creme);line-height:1.15}
+.barra .p b{font:400 26px/1 var(--serif)}
+.barra .p small{display:block;font-size:12px;color:var(--blush)}
+.barra .btn{min-height:46px;padding:0 24px;font-size:15px}
+
+/* revelar */
+.js .rv{opacity:0;transform:translateY(12px);transition:opacity .42s cubic-bezier(.2,.7,.2,1),transform .42s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+
+@media(min-width:640px){
+  .grade,.cits,.quatro{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body{font-size:18px}
+}
+@media(min-width:768px){
+  .barra{display:none}
+  body{padding-bottom:0}
+  .quem .wrap{grid-template-columns:300px minmax(0,1fr);gap:56px}
+  .junto .wrap{grid-template-columns:repeat(2,minmax(0,1fr));gap:64px}
+  .prova{grid-template-columns:260px minmax(0,1fr);gap:34px;padding:28px 34px}
+  section{padding:92px 0}
+  .pre{padding:72px 0 8px}.preco{padding:48px 0 92px}
+}
+@media(min-width:1024px){
+  .hero{padding:72px 0 96px}
+  .hero .wrap{grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:0 8.333%;align-items:center}
+  .arco{margin:0;max-width:none;width:100%}
+  .grade{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .grade .mod{grid-column:span 2}
+  .grade .mod:nth-child(n+4){grid-column:span 3}
+  .quatro{grid-template-columns:repeat(4,minmax(0,1fr))}
+  }
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .js .rv{opacity:1;transform:none}
+  .btn:hover,.mod:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- símbolos reutilizados -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ramo" viewBox="0 0 80 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <path d="M4 30 C22 30 34 22 48 18 C58 15 68 14 76 8"/>
+    <path d="M26 26 C22 16 28 10 36 9 C38 17 34 24 26 26Z"/>
+    <path d="M44 19 C44 10 52 5 60 6 C60 13 54 19 44 19Z"/>
+    <path d="M36 25 C40 31 48 33 54 30 C50 24 44 22 36 25Z"/>
+  </symbol>
+  <symbol id="mono" viewBox="0 0 120 160" fill="none">
+    <path d="M6 154V60C6 28 30 6 60 6s54 22 54 54v94Z" stroke="currentColor" stroke-width="2"/>
+    <circle cx="68" cy="88" r="26" stroke="currentColor" stroke-width="6"/>
+    <text x="34" y="106" font-family="DM Serif Display,Georgia,serif" font-style="italic" font-size="64" fill="currentColor">J</text>
+  </symbol>
+</svg>
+
+<div class="faixa">
+  <a href="#crescer"><span>Versão de demonstração · ver o que mais dá para fazer ↓</span></a>
+</div>
+
+<!-- 1. HERO (celular primeiro: título, foto, preço e botão na primeira tela) -->
+<header class="hero escuro">
+  <div class="wrap">
+    <div class="topo">
+      <p class="rotulo">Fios &amp; Flash · Curso online</p>
+      <h1>Curso online de <em>cabeleireira</em> com a Juliana Oliveira</h1>
+    </div>
+    <div class="fhero"><img src="../assets/tratadas/hero-mobile.jpg" width="1280" height="1400" alt="Juliana Oliveira sorrindo, segurando uma tesoura de corte"></div>
+    <div class="oferta">
+      <p class="linha">5 módulos por <b>R$ 49,00</b> <span>pagamento único</span></p>
+      <ul class="mini"><li>Certificado</li><li>Mentorias ao vivo</li><li>Garantia de 7 dias</li></ul>
+      <a class="btn bloco" id="btn-hero" href="#CHECKOUT-HOTMART">Quero começar o curso</a>
+    </div>
+  </div>
+</header>
+
+<!-- 1b. PROVA RÁPIDA + AULA -->
+<section class="rapida grao">
+  <div class="wrap">
+    <p class="rotulo">Quem já fez o curso</p>
+    <div class="tira" tabindex="0" aria-label="Depoimentos de alunas">
+      <figure><p>Já trabalhava como assistente e não conseguia fazer escova modelada. Fiz o curso, treinei bastante e agora as clientes pedem a “minha escova”.</p><cite>Aluna do curso online</cite></figure>
+      <figure><p>Em menos de 2 meses de curso já estava trabalhando em uma rede de escova bem conhecida. Você me deu força para dar o primeiro passo.</p><cite>Aluno do curso online</cite></figure>
+      <figure><p>Não aprendi nada disso no meu curso presencial. Esse aqui é o melhor curso da vida.</p><cite>Aluna do curso online</cite></figure>
+    </div>
+    <div class="aula">
+      <p class="rotulo">Aula experimental</p>
+      <div class="poster"><img src="../assets/tratadas/aula-poster.jpg" width="640" height="360" loading="lazy" alt="Miniatura de uma aula da Juliana"><span class="play" aria-hidden="true"></span></div>
+      <p class="pend">[colocar aqui a aula experimental dela, como na página atual]</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. QUEM ENSINA -->
+<section class="quem grao">
+  <svg class="mono" aria-hidden="true"><use href="#mono"/></svg>
+  <div class="wrap">
+    <div class="inserto rv">
+      <img src="../assets/tratadas/chanel-inserto.jpg" width="640" height="800" loading="lazy" alt="Juliana Oliveira, de corpo inteiro, de blazer, ao lado de um corte chanel">
+    </div>
+    <div class="rv" style="--d:60ms">
+      <p class="rotulo">Quem ensina</p>
+      <div class="fio"></div>
+      <h2>Juliana Oliveira, cabeleireira há mais de 20 anos e <em>formadora</em> há 12.</h2>
+      <ul class="fatos">
+        <li>Formadora de cabeleireiros na escola presencial Fios &amp; Flash.</li>
+        <li>Você tem suporte com a professora, com atendimento diário por e-mail.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3. MÓDULOS -->
+<section class="lav grao" id="modulos">
+  <div class="wrap">
+    <div class="centro rv">
+      <svg class="ramo" aria-hidden="true"><use href="#ramo"/></svg>
+      <p class="rotulo">O que você aprende</p>
+      <h2>Cinco módulos, do <em>básico</em> ao bônus.</h2>
+    </div>
+    <div class="grade">
+      <article class="mod rv">
+        <div class="n">01</div>
+        <h3>Escova e modelagem</h3>
+        <p class="aulas">25 aulas</p>
+        <figure>
+          <img src="../assets/site/box-3.png" width="843" height="1330" loading="lazy" alt="Caixa do curso de Escova e Modelagem da Juliana Oliveira, com secador e escova redonda">
+          <figcaption>Escova e modelagem</figcaption>
+        </figure>
+      </article>
+      <article class="mod rv" style="--d:60ms">
+        <div class="n">02</div>
+        <h3>Corte feminino</h3>
+        <p class="aulas">28 aulas</p>
+      </article>
+      <article class="mod rv" style="--d:120ms">
+        <div class="n">03</div>
+        <h3>Mechas</h3>
+        <p class="aulas">58 aulas</p>
+      </article>
+      <article class="mod rv" style="--d:180ms">
+        <div class="n">04</div>
+        <h3>Selagem e progressiva</h3>
+        <p class="aulas">17 aulas</p>
+      </article>
+      <article class="mod rv" style="--d:240ms">
+        <span class="bonus">Bônus</span>
+        <div class="n">05</div>
+        <h3>Tricologia</h3>
+        <p class="aulas">5 aulas</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. O QUE VEM JUNTO -->
+<section class="junto escuro">
+  <svg class="mono" aria-hidden="true"><use href="#mono"/></svg>
+  <div class="wrap">
+    <div class="cert rv">
+      <img src="../assets/site/certificado.png" width="600" height="443" loading="lazy" alt="Modelo do certificado de conclusão do curso, em tons de roxo, com espaço para o nome da aluna">
+    </div>
+    <div class="rv" style="--d:60ms">
+      <p class="rotulo">O que vem junto</p>
+      <div class="fio"></div>
+      <h2>Mais do que aulas: <em>acompanhamento</em>.</h2>
+      <ul class="lista-v">
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="9" width="34" height="25" rx="3"/><path d="M15 17h18M15 23h12"/><circle cx="33" cy="35" r="5"/><path d="M30.5 39.5 29 44l4-2 4 2-1.5-4.5"/></svg>
+          <div><b>Certificado de conclusão</b><span>Sem custo adicional.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="11" width="36" height="24" rx="3"/><path d="M20 18.5v9l8-4.5Z"/><path d="M16 41h16"/></svg>
+          <div><b>Mentorias ao vivo</b><span>Encontros ao vivo, incluídos no curso.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="19" r="6"/><circle cx="33" cy="19" r="6"/><path d="M5 38c0-7 5-11 12-11s12 4 12 11M27 28c2-1 4-1.5 6-1.5 6 0 10 4 10 11.5"/></svg>
+          <div><b>Comunidade</b><span>Faz parte do curso.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="11" width="36" height="26" rx="3"/><path d="m8 14 16 12 16-12"/></svg>
+          <div><b>Suporte com a professora</b><span>Atendimento diário por e-mail.</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 5. DEPOIMENTOS -->
+<section class="grao">
+  <div class="wrap">
+    <div class="centro rv">
+      <svg class="ramo" aria-hidden="true"><use href="#ramo"/></svg>
+      <p class="rotulo">Quem já fez o curso</p>
+      <h2>Elas decidiram investir em <em>si mesmas</em>.</h2>
+      <p class="sub">Mensagens reais de alunas, reescritas aqui sem nome.</p>
+    </div>
+    <div class="cits">
+      <figure class="cit rv" style="margin:0">
+        <p>Já trabalhava como assistente e não conseguia fazer escova modelada. Fiz o curso, treinei bastante e agora as clientes vão ao salão e pedem, para a minha patroa, a “minha escova”.</p>
+        <cite>Aluna do curso online</cite>
+      </figure>
+      <figure class="cit rv" style="margin:0;--d:60ms">
+        <p>Fiz os cachos no babyliss do jeito que você ensinou. Ainda não está igual ao seu, mas creio que vou conseguir.</p>
+        <cite>Aluna do curso online</cite>
+      </figure>
+      <figure class="cit rv" style="margin:0;--d:120ms">
+        <p>Em menos de 2 meses de curso já estava trabalhando em uma rede de escova bem conhecida. Você me deu força para dar o primeiro passo.</p>
+        <cite>Aluno do curso online</cite>
+      </figure>
+      <figure class="cit rv" style="margin:0;--d:180ms">
+        <p>Não aprendi nada disso no meu curso presencial. Achei aquele curso muito abusivo, e esse aqui é o melhor curso da vida.</p>
+        <cite>Aluna do curso online</cite>
+      </figure>
+    </div>
+    <div class="prova rv">
+      <div class="foto" style="min-height:120px">
+        <img src="../assets/tratadas/resultado-cabelo.jpg" width="680" height="850" loading="lazy" alt="Cabelo longo e liso, bem alinhado e com brilho, visto de costas, feito por uma aluna na filha dela">
+      </div>
+      <blockquote>
+        “Quando eu escovava o cabelo da minha filha, precisava passar a chapinha. Agora fiquei surpreendida: nem precisou.”
+        <span>Aluna do curso online · estou amando esse curso</span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CITAÇÃO + 7. PREÇO -->
+<section class="pre lav centro">
+  <div class="wrap estreito rv">
+    <div class="fio"></div>
+    <q>Ju, você está de parabéns: melhor curso da vida.</q>
+    <cite>Aluna do curso online</cite>
+  </div>
+</section>
+<section class="preco lav" id="preco">
+  <div class="wrap">
+    <div class="cartao rv">
+      <p class="de">Curso completo</p>
+      <div class="valor"><small>R$</small>49,00</div>
+      <p class="mini">Pagamento único</p>
+      <ul>
+        <li>5 módulos de aulas</li>
+        <li>Certificado de conclusão, sem custo adicional</li>
+        <li>Mentorias ao vivo e comunidade</li>
+        <li>Suporte com a professora por e-mail</li>
+        <li>Garantia de 7 dias</li>
+      </ul>
+      <a class="btn bloco" href="#CHECKOUT-HOTMART">Quero começar o curso</a>
+      <p class="mini">Acesso pela Hotmart · tempo de acesso <span class="pend">[conferir]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. GARANTIA -->
+<section class="garantia escuro">
+  <div class="wrap">
+    <svg class="selo" viewBox="0 0 112 112" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <circle cx="56" cy="56" r="52"/><circle cx="56" cy="56" r="45" stroke-dasharray="2 5" stroke-linecap="round"/>
+      <path d="M56 20l5 5-5 5-5-5Z" fill="currentColor" stroke="none"/>
+      <text x="56" y="64" text-anchor="middle" font-family="DM Serif Display,Georgia,serif" font-size="38" fill="currentColor" stroke="none">7</text>
+      <text x="56" y="82" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="9" letter-spacing="2" fill="currentColor" stroke="none">DIAS</text>
+    </svg>
+    <p class="rotulo" style="margin:0">Garantia de 7 dias</p>
+    <p class="g">Se não gostar do curso, devolvemos o seu dinheiro.</p>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section>
+  <div class="wrap estreito">
+    <div class="centro rv">
+      <p class="rotulo">Perguntas frequentes</p>
+      <h2>O que <em>mais</em> perguntam.</h2>
+    </div>
+    <div style="margin-top:28px">
+      <details open><summary>Como eu acesso o curso?</summary><p>O acesso é pela Hotmart, depois da compra. Como assistir (celular, computador) <span class="pend">[conferir]</span>.</p></details>
+      <details open><summary>Por quanto tempo tenho acesso?</summary><p><span class="pend">[conferir]</span></p></details>
+      <details open><summary>Preciso ter experiência?</summary><p><span class="pend">[conferir]</span> O curso tem módulos de escova, corte, mechas, selagem e progressiva, e o bônus de tricologia.</p></details>
+      <details open><summary>Como recebo o certificado?</summary><p>O certificado de conclusão está incluído, sem custo adicional. Como e quando ele é emitido <span class="pend">[conferir]</span>.</p></details>
+      <details open><summary>Como funcionam as mentorias e a comunidade?</summary><p>As mentorias são ao vivo e a comunidade faz parte do curso. Dias e horários <span class="pend">[conferir]</span>.</p></details>
+      <details open><summary>Tenho suporte se eu travar?</summary><p>Sim. Você conta com suporte com a professora, com atendimento diário por e-mail.</p></details>
+      <details open><summary>E se eu não gostar?</summary><p>Se não gostar do curso, devolvemos o seu dinheiro. A garantia é de 7 dias. Como pedir o reembolso <span class="pend">[conferir]</span>.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FECHO -->
+<section class="fecho escuro" id="fecho">
+  <svg class="mono" aria-hidden="true"><use href="#mono"/></svg>
+  <div class="wrap">
+    <svg class="ramo" style="margin:0 auto 18px" aria-hidden="true"><use href="#ramo"/></svg>
+    <h2>Aprenda o <em>ofício</em> com quem corta cabelo há mais de 20 anos.</h2>
+    <a class="btn" href="#CHECKOUT-HOTMART">Quero começar o curso</a><br>
+    <a class="txt" href="#WHATSAPP">Dúvida antes de comprar? Fale no WhatsApp</a>
+  </div>
+</section>
+
+<!-- 11. DEMONSTRAÇÃO: DAQUI DÁ PARA CRESCER -->
+<section class="crescer centro" id="crescer">
+  <div class="wrap">
+    <span class="demo-tag">Só da demonstração</span>
+    <p class="nota">Esta parte não faz parte da sua página. É só para mostrar o que mais dá para construir em volta dela.</p>
+    <h2 style="margin-top:14px">Daqui dá para <em>crescer</em></h2>
+    <div class="quatro">
+      <article class="cr rv">
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="38" height="32" rx="3"/><path d="M5 17h38"/><circle cx="10" cy="12.5" r=".8"/><circle cx="14" cy="12.5" r=".8"/><path d="M12 25h10v9H12zM27 25h9M27 30h9"/></svg>
+        <h3>Site completo</h3>
+        <p>Um endereço só seu, com a página do curso e a do salão, no mesmo visual.</p>
+      </article>
+      <article class="cr rv" style="--d:60ms">
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 43S10 30 10 20a14 14 0 0 1 28 0c0 10-14 23-14 23Z"/><circle cx="24" cy="20" r="5"/></svg>
+        <h3>Ficha no Google</h3>
+        <p>Perfil da Empresa para quem procura cabeleireira em Alicante.</p>
+      </article>
+      <article class="cr rv" style="--d:120ms">
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 41h36M12 41V26M22 41V16M32 41V22M42 41V10"/><path d="m11 18 11-8 10 6 10-9"/></svg>
+        <h3>Painel de organização financeira</h3>
+        <p>Entradas e saídas do curso e do salão num lugar só, fácil de ler.</p>
+      </article>
+      <article class="cr rv" style="--d:180ms">
+        <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15h8l3-5h14l3 5h8v24H6Z"/><circle cx="24" cy="26" r="7"/><path d="M36 20h2"/></svg>
+        <h3>Foto e vídeo com parceiros</h3>
+        <p>Uma sessão de foto e vídeo com profissionais, para o seu rosto e o seu resultado saírem à altura.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="rodape">Demonstração privada · nada aqui está publicado · feita para você</footer>
+
+<!-- barra fixa (celular) -->
+<div class="barra" id="barra" aria-hidden="true">
+  <div class="p"><b>R$ 49,00</b><small>pagamento único</small></div>
+  <a class="btn" href="#CHECKOUT-HOTMART" tabindex="-1">Quero começar o curso</a>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var rv=document.querySelectorAll('.rv');
+  setTimeout(function(){rv.forEach(function(e){e.classList.add('in')})},2500); // sem JS lento nem observador, o conteúdo aparece mesmo assim
+  if(!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  rv.forEach(function(e){io.observe(e)});
+
+  // barra fixa: aparece quando o botão do hero sai da tela, some sobre o preço e o fecho
+  var barra=document.getElementById('barra'),btn=barra.querySelector('.btn'),vis={},heroSaiu=false;
+  function upd(){
+    var on=heroSaiu&&!vis.preco&&!vis.fecho;
+    barra.classList.toggle('on',on);barra.setAttribute('aria-hidden',on?'false':'true');btn.tabIndex=on?0:-1;
+  }
+  var hero=new IntersectionObserver(function(es){var e=es[0];heroSaiu=!e.isIntersecting&&e.boundingClientRect.top<0;upd()});
+  hero.observe(document.getElementById('btn-hero'));
+  var alvo=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target.id]=e.isIntersecting});upd()});
+  ['preco','fecho'].forEach(function(i){alvo.observe(document.getElementById(i))});
+})();
+</script>
+</body>
+</html>

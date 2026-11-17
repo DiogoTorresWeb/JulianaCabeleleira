@@ -9,7 +9,8 @@ Abra **[apresentacao/index.html](apresentacao/index.html)**. Ela leva a todo o r
 | Pasta | O que é |
 |---|---|
 | `apresentacao/` | Quem sou eu, o que eu vi no que você já tem, o que preparei e os próximos passos |
-| `pagina-curso-v2/` | A página de venda do curso, de outro jeito (mesma oferta, mesmo preço, mesma garantia) |
+| `pagina-curso-v3/` | A página de venda do curso pensada para o celular: rosto, preço e botão já na primeira tela (mesma oferta, mesmo preço, mesma garantia) |
+| `pagina-curso-v2/` | A primeira versão da página do curso, para comparar |
 | `marca/` | Logo, avatar, banner e miniaturas do YouTube, e os posts do Instagram (dois conjuntos e um carrossel) |
 | `instagram/` | O perfil do salão reorganizado e a análise ponto a ponto, antes e depois |
 | `entrega/posts/` | Todos os posts prontos em imagem (1080×1350), organizados por tipo. Há uma vista geral em `_visao-geral.jpg` e um guia em `entrega/LEIA.md` |
@@ -19,7 +20,7 @@ Abra **[apresentacao/index.html](apresentacao/index.html)**. Ela leva a todo o r
 1. Apresentação.
 2. Perfil do Instagram (antes e depois).
 3. Posts com o seu cabelo e a frase, e o carrossel.
-4. Página do curso.
+4. Página do curso (versão celular: abra no telefone).
 5. Marca e YouTube.
 
 ## Avisos
