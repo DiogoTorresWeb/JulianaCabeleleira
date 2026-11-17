@@ -44,7 +44,7 @@ h2{font-size:clamp(30px,6.2vw,46px);margin-bottom:18px}
 .lav{background:var(--lavanda)}
 .sub{color:var(--mute)}
 .escuro .sub{color:var(--blush)}
-.pend{color:var(--mute);font-style:italic}
+.pend{font-size:0;line-height:0;font-style:normal;white-space:nowrap}.pend::after{content:"a confirmar";display:inline-block;font:600 12px/1.6 var(--sans);background:#ece6f7;color:var(--mute);padding:0 10px;border-radius:99px;vertical-align:baseline}
 
 /* fio de ouro com losango, raminho, monograma */
 .fio{width:96px;height:1px;background:var(--ouro);position:relative;margin:0 0 22px}
@@ -178,8 +178,8 @@ details p{padding:0 22px 20px;color:#3E3543}
 .oferta .linha{font:400 20px/1.25 var(--serif);color:var(--creme);margin-bottom:8px}
 .oferta .linha b{font-size:40px;color:var(--ouro-claro);font-weight:400;margin:0 4px}
 .oferta .linha span{font:600 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--blush);display:inline-block}
-.mini{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 16px;font-size:14px;color:var(--blush)}
-.mini li::before{content:"";display:inline-block;width:6px;height:6px;margin-right:8px;vertical-align:middle;background:var(--ouro-claro);transform:rotate(45deg)}
+.oferta .mini{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 16px;font-size:14px;color:var(--blush)}
+.oferta .mini li::before{content:"";display:inline-block;width:6px;height:6px;margin-right:8px;vertical-align:middle;background:var(--ouro-claro);transform:rotate(45deg)}
 .rapida{padding:36px 0 44px}
 .tira{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 14px;margin:0 -20px}
 .tira figure{margin:0;flex:0 0 82%;scroll-snap-align:start;background:#fff;border:1px solid #e9dff0;border-radius:18px;padding:18px;font-size:16px;line-height:1.5}
@@ -287,8 +287,8 @@ details p{padding:0 22px 20px;color:#3E3543}
     </div>
     <div class="aula">
       <p class="rotulo">Aula experimental</p>
-      <div class="poster"><img src="../assets/tratadas/aula-poster.jpg" width="640" height="360" loading="lazy" alt="Miniatura de uma aula da Juliana"><span class="play" aria-hidden="true"></span></div>
-      <p class="pend">[colocar aqui a aula experimental dela, como na página atual]</p>
+      <div class="poster"><img src="../assets/tratadas/aula-quadro.jpg" width="1280" height="720" loading="lazy" alt="Juliana Oliveira dando aula, segurando uma tesoura, ao lado do quadro branco"><span class="play" aria-hidden="true"></span></div>
+      <p>Assista a uma aula antes de decidir.</p>
     </div>
   </div>
 </section>
@@ -298,7 +298,7 @@ details p{padding:0 22px 20px;color:#3E3543}
   <svg class="mono" aria-hidden="true"><use href="#mono"/></svg>
   <div class="wrap">
     <div class="inserto rv">
-      <img src="../assets/tratadas/chanel-inserto.jpg" width="640" height="800" loading="lazy" alt="Juliana Oliveira, de corpo inteiro, de blazer, ao lado de um corte chanel">
+      <img src="../assets/tratadas/quem-salao.jpg" width="720" height="900" loading="lazy" alt="Juliana Oliveira no salão, sorrindo, alisando o cabelo de uma cliente com a chapinha">
     </div>
     <div class="rv" style="--d:60ms">
       <p class="rotulo">Quem ensina</p>
@@ -360,7 +360,7 @@ details p{padding:0 22px 20px;color:#3E3543}
   <svg class="mono" aria-hidden="true"><use href="#mono"/></svg>
   <div class="wrap">
     <div class="cert rv">
-      <img src="../assets/site/certificado.png" width="600" height="443" loading="lazy" alt="Modelo do certificado de conclusão do curso, em tons de roxo, com espaço para o nome da aluna">
+      <img src="../assets/site/certificado-2x.png" width="1200" height="886" loading="lazy" alt="Modelo do certificado de conclusão do curso, em tons de roxo, com espaço para o nome da aluna">
     </div>
     <div class="rv" style="--d:60ms">
       <p class="rotulo">O que vem junto</p>
@@ -417,7 +417,7 @@ details p{padding:0 22px 20px;color:#3E3543}
     </div>
     <div class="prova rv">
       <div class="foto" style="min-height:120px">
-        <img src="../assets/tratadas/resultado-cabelo.jpg" width="680" height="850" loading="lazy" alt="Cabelo longo e liso, bem alinhado e com brilho, visto de costas, feito por uma aluna na filha dela">
+        <img src="../assets/tratadas/resultado-cabelo-2x.jpg" width="664" height="886" loading="lazy" alt="Cabelo longo e liso, bem alinhado e com brilho, visto de costas, feito por uma aluna na filha dela">
       </div>
       <blockquote>
         “Quando eu escovava o cabelo da minha filha, precisava passar a chapinha. Agora fiquei surpreendida: nem precisou.”
